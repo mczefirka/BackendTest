@@ -1,15 +1,11 @@
 package com.backendTest.model;
 
-import com.backendTest.util.ProductData;
-
-import java.util.ArrayList;
-
 public class Product {
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
     private int quantity;
     private double price;
-    private Boolean onSale;
+    private final Boolean onSale;
 
     public Product(int id, String name, int quantity, double price, Boolean onSale) {
         this.id = id;
@@ -37,6 +33,14 @@ public class Product {
 
     public Boolean getOnSale() {
         return onSale;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

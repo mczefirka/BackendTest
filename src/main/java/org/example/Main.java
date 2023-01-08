@@ -12,7 +12,6 @@ public class Main {
         String input = sc1.nextLine();
 
         factory.createCheque(input);
-        System.out.println("Test input:" + input + " Main");
 
     }
 }
